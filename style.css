@@ -7,9 +7,14 @@ body {
     font-size: 14px;
 }
 
+.logo a {
+    cursor: pointer;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1200px;
+    position: relative;
 }
 
 header {
@@ -21,28 +26,25 @@ header {
     letter-spacing: 1.05px;
 }
 
-.dots {
+.swiper-pagination-bullets {
     display: flex;
     position: absolute;
     bottom: 56px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 10;
 }
 
-.dot {
+.swiper-pagination-bullet {
     width: 15px;
     height: 15px;
+    margin: 0 7px;
     border-radius: 50%;
     background-color: #fff;
 }
 
-.dot-center {
-    margin: 0 15px;
-}
-
-.active {
+.swiper-pagination-bullet-active {
     background-color: #000000;
-    margin: 0 15px;
 }
 
 ul,
@@ -95,6 +97,9 @@ nav ul li a {
     border-radius: 50%;
     border: 1px solid #fff;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
 }
 
 .slider-button:hover {
@@ -138,6 +143,7 @@ h5 span {
     text-transform: uppercase;
     letter-spacing: 4.8px;
     background: #000000;
+    font-weight: 300;
 }
 
 h5 {
@@ -147,6 +153,7 @@ h5 {
     letter-spacing: 7.2px;
     text-align: center;
     line-height: 50px;
+    font-weight: 300;
 }
 
 .navigate {
@@ -253,4 +260,8 @@ footer .logo {
 
 .theme {
     padding: 40px;
+}
+
+.swiper-container {
+    width: 100%;
 }

@@ -8,16 +8,15 @@
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
             rel="stylesheet"
         />
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper/css/swiper.min.css"
-        />
+        <link rel="stylesheet" href="swiper.css" />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <header class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="" />
+                <a href="file:///Users/tata/projects/Lian_project/index.html">
+                    <img src="images/logo.png" alt=""
+                /></a>
             </div>
             <nav>
                 <ul>
@@ -25,7 +24,10 @@
                         <a href="#" class="active-page">— Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a
+                            href="file:///Users/tata/projects/Lian_project/about.html#"
+                            >About</a
+                        >
                     </li>
                     <li>
                         <a href="#">Portfolio</a>
@@ -38,14 +40,38 @@
                     </li>
                     <li>
                         <a href="#" class="search"
-                            ><img src="images/twitter.svg" alt=""
+                            ><img src="images/search-main.svg" alt=""
                         /></a>
                     </li>
                 </ul>
             </nav>
         </header>
         <header class="slider container-lg">
-            <div class="main-area">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!--  -->
+                    <div class="main-area swiper-slide">
+                        <h5>
+                            <span>Lian Creative Agency 1</span>
+                            <br />Minimal Freelance Portfolio
+                        </h5>
+                    </div>
+                    <!--  -->
+                    <div class="main-area swiper-slide">
+                        <h5>
+                            <span>Lian Creative Agency 2</span>
+                            <br />Minimal Freelance Portfolio
+                        </h5>
+                    </div>
+                    <!--  -->
+                    <div class="main-area swiper-slide">
+                        <h5>
+                            <span>Lian Creative Agency 3</span>
+                            <br />Minimal Freelance Portfolio
+                        </h5>
+                    </div>
+                    <!--  -->
+                </div>
                 <a class="slider-button slider-button-left">
                     <div class="deg-left"></div>
                     <div class="deg-right"></div>
@@ -54,15 +80,7 @@
                     <div class="deg-left"></div>
                     <div class="deg-right"></div>
                 </a>
-                <h5>
-                    <span>Lian Creative Agency</span>
-                    <br />Minimal Freelance Portfolio
-                </h5>
-                <div class="dots">
-                    <div class="dot"></div>
-                    <div class="dot active"></div>
-                    <div class="dot"></div>
-                </div>
+                <div class="dots"></div>
             </div>
         </header>
         <main>
