@@ -1,0 +1,48 @@
+.foot {
+    background-color: #ffffff;
+    box-shadow: 0 -3px 5px 1px rgba(163, 163, 163, 0.1);
+    padding-top: 1px;
+}
+
+footer .logo {
+    display: flex;
+    justify-content: center;
+    margin: 64px auto 45px auto;
+    align-items: center;
+    width: 130px;
+}
+
+.line-foot {
+    height: 1px;
+    border: none;
+    background-color: #ebebeb;
+}
+
+.icon-twit {
+    width: 14px;
+    height: 14px;
+    color: #777777;
+    margin: 0 25px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+}
+
+.theme p {
+    color: #9c9c9c;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.33px;
+    text-align: center;
+}
+
+.theme b {
+    color: #000000;
+}
+
+.theme {
+    padding: 40px;
+}

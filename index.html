@@ -9,14 +9,15 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="swiper.css" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="dist/styles.css" />
     </head>
     <body>
         <header class="container">
             <div class="logo">
-                <a href="file:///Users/tata/projects/Lian_project/index.html">
-                    <img src="images/logo.png" alt=""
-                /></a>
+                <a href="#"> <img src="images/logo.png" alt=""/></a>
+            </div>
+            <div class="burger" tabindex="-1">
+                <div class="burger-line"></div>
             </div>
             <nav>
                 <ul>
@@ -24,10 +25,7 @@
                         <a href="#" class="active-page">— Home</a>
                     </li>
                     <li>
-                        <a
-                            href="file:///Users/tata/projects/Lian_project/about.html#"
-                            >About</a
-                        >
+                        <a href="#">About</a>
                     </li>
                     <li>
                         <a href="#">Portfolio</a>
@@ -46,73 +44,80 @@
                 </ul>
             </nav>
         </header>
-        <header class="slider container-lg">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <!--  -->
-                    <div class="main-area swiper-slide">
-                        <h5>
-                            <span>Lian Creative Agency 1</span>
-                            <br />Minimal Freelance Portfolio
-                        </h5>
-                    </div>
-                    <!--  -->
-                    <div class="main-area swiper-slide">
-                        <h5>
-                            <span>Lian Creative Agency 2</span>
-                            <br />Minimal Freelance Portfolio
-                        </h5>
-                    </div>
-                    <!--  -->
-                    <div class="main-area swiper-slide">
-                        <h5>
-                            <span>Lian Creative Agency 3</span>
-                            <br />Minimal Freelance Portfolio
-                        </h5>
-                    </div>
-                    <!--  -->
-                </div>
-                <a class="slider-button slider-button-left">
-                    <div class="deg-left"></div>
-                    <div class="deg-right"></div>
-                </a>
-                <a class="slider-button slider-button-right">
-                    <div class="deg-left"></div>
-                    <div class="deg-right"></div>
-                </a>
-                <div class="dots"></div>
-            </div>
-        </header>
+
         <main>
-            <section class="container">
-                <div class="navigate">
-                    <nav>
-                        <ul>
-                            <li>
+            <div class="slider container-lg">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--  -->
+                        <div class="main-area swiper-slide">
+                            <div class="black-area">
+                                <h2>Lian Creative Agency 1</h2>
+                            </div>
+                            <div class="letter-spase-area">
+                                <p>Freelance Portfolio</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="main-area swiper-slide">
+                            <div class="black-area">
+                                <h2>Lian Creative Agency 2</h2>
+                            </div>
+                            <div class="letter-spase-area">
+                                <p>Freelance Portfolio</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="main-area swiper-slide">
+                            <div class="black-area">
+                                <h2>Lian Creative Agency 3</h2>
+                            </div>
+                            <div class="letter-spase-area">
+                                <p>Freelance Portfolio</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                    <a class="slider-button slider-button-left">
+                        <div class="deg-left"></div>
+                        <div class="deg-right"></div>
+                    </a>
+                    <a class="slider-button slider-button-right">
+                        <div class="deg-left"></div>
+                        <div class="deg-right"></div>
+                    </a>
+                    <div class="dots"></div>
+                </div>
+            </div>
+            <section class="container container-menu">
+                <div class="navigate-menu">
+                    <nav class="menu">
+                        <ul class="menu-ul">
+                            <li class="menu-li">
                                 <a href="#" class="active-page">All</a>
                             </li>
                             <hr class="slash" />
-                            <li>
+                            <li class="menu-li">
                                 <a href="#">Logo</a>
                             </li>
                             <hr class="slash" />
-                            <li>
+                            <li class="menu-li">
                                 <a href="#">Mobile App</a>
                             </li>
                             <hr class="slash" />
-                            <li>
+                            <li class="menu-li">
                                 <a href="#">Wordpress</a>
                             </li>
                             <hr class="slash" />
-                            <li>
+                            <li class="menu-li">
                                 <a href="#">Web design</a>
                             </li>
                             <hr class="slash" />
-                            <li>
+                            <li class="menu-li">
                                 <a href="#">UI/UX</a>
                             </li>
                             <hr class="slash" />
-                            <li>
+                            <li class="menu-li">
                                 <a href="#">Branding</a>
                             </li>
                         </ul>
@@ -132,7 +137,7 @@
                             <img src="images/first-2.png" alt="" />
                         </div>
                     </div>
-                    <div class="images-marg">
+                    <div class="images">
                         <div class="ima">
                             <img src="images/second-1.png" alt="" />
                         </div>
@@ -166,7 +171,7 @@
                 <div class="logo">
                     <img src="images/logo.png" alt="" />
                 </div>
-                <hr />
+                <hr class="line-foot" />
                 <div class="icon">
                     <div class="icon-twit">
                         <a href="#">
@@ -214,6 +219,6 @@
             </footer>
         </main>
         <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-        <script src="script.js"></script>
+        <script src="dist/script.js"></script>
     </body>
 </html>
