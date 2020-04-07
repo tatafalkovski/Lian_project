@@ -37,6 +37,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    /* small desktop */
+    @media screen and (max-width: 1024px) {
+        height: 50vh;
+        min-height: 400px;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 30vh;
+        min-height: 300px;
+    }
 }
 
 .black-area {
@@ -51,6 +62,37 @@
         text-transform: uppercase;
         letter-spacing: 4.8px;
     }
+
+    /* small desktop */
+    @media screen and (max-width: 1024px) {
+        position: absolute;
+        top: 30%;
+        right: 50%;
+        transform: translate(50%, 25%);
+        padding: 0;
+
+        h2 {
+            margin: 0;
+            font-size: 30px;
+            font-weight: 300;
+        }
+    }
+
+    //tablet
+    @media screen and (max-width: 915px) {
+        top: 25%;
+    }
+
+    // tablet
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+        top: 10%;
+    }
+
+    // mobile
+    @media screen and (max-width: 320px) {
+        top: 5%;
+    }
 }
 
 .letter-spase-area {
@@ -61,6 +103,32 @@
     text-align: center;
     line-height: 50px;
     font-weight: 300;
+
+    /* small desktop */
+    @media screen and (max-width: 1024px) {
+        .letter-spase-area {
+            position: absolute;
+            top: 40%;
+            right: 50%;
+            transform: translate(50%, 50%);
+        }
+    }
+
+    //tablet
+    @media screen and (max-width: 915px) {
+        top: 50%;
+        transform: translate(0%, 50%);
+    }
+
+    // tablet
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+        top: 10%;
+    }
+
+    // mobile
+    @media screen and (max-width: 320px) {
+    }
 }
 
 .slider-button {
@@ -122,27 +190,6 @@
 
     nav ul li a {
         padding: 25px 15px 20px;
-    }
-
-    .black-area {
-        position: absolute;
-        top: 10%;
-        right: 50%;
-        transform: translate(50%, 25%);
-        padding: 0;
-    }
-
-    .black-area h2 {
-        margin: 0;
-        font-size: 20px;
-        font-weight: 300;
-    }
-
-    .letter-spase-area {
-        position: absolute;
-        top: 55%;
-        right: 50%;
-        transform: translate(50%, 50%);
     }
 }
 

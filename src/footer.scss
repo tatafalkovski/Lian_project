@@ -10,6 +10,14 @@ footer .logo {
     margin: 64px auto 45px auto;
     align-items: center;
     width: 130px;
+
+    @media screen and (max-width: 1024px) {
+        margin: 35px auto 20px auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin: 20px auto 20px auto;
+    }
 }
 
 .line-foot {
@@ -23,12 +31,22 @@ footer .logo {
     height: 14px;
     color: #777777;
     margin: 0 25px;
+
+    @media screen and (max-width: 768px) {
+        margin: 0;
+    }
 }
 
 .icon {
     display: flex;
     justify-content: center;
     margin: 25px auto;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        margin: 25px;
+    }
 }
 
 .theme p {
@@ -45,4 +63,8 @@ footer .logo {
 
 .theme {
     padding: 40px;
+
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
 }

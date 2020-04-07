@@ -8,26 +8,23 @@
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="blog-style.css" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="dist/styles.css" />
     </head>
     <body>
-        <header class="container">
+        <header class="container main-header">
             <div class="logo">
-                <a href="file:///Users/tata/projects/Lian_project/index.html">
-                    <img src="images/logo.png" alt=""
-                /></a>
+                <a href="#"> <img src="images/logo.png" alt=""/></a>
             </div>
-            <nav>
-                <ul>
+            <div class="burger" tabindex="-1">
+                <div class="burger-line"></div>
+            </div>
+            <nav class="menu-header">
+                <ul class="menu-head">
                     <li>
                         <a href="#" class="active-page">— Home</a>
                     </li>
                     <li>
-                        <a
-                            href="file:///Users/tata/projects/Lian_project/about.html#"
-                            >About</a
-                        >
+                        <a href="#">About</a>
                     </li>
                     <li>
                         <a href="#">Portfolio</a>
@@ -46,17 +43,19 @@
                 </ul>
             </nav>
         </header>
-        <header class="top-area container-lg">
-            <div class="main-area-about-us">
-                <div class="top-area">
-                    <h5>
-                        <span>News About Lian</span>
-                        <br />Latest News & Insights
-                    </h5>
+
+        <main>
+            <section class="top-area container-lg">
+                <div class="main-area-about-us">
+                    <div class="black-area">
+                        <h2>News About Lian</h2>
+                    </div>
+                    <div class="letter-spase-area">
+                        <p>Latest news & insights</p>
+                    </div>
                 </div>
-            </div>
-        </header>
-        <main class="container">
+            </section>
+
             <section class="container">
                 <div class="main-body-container">
                     <div class="column">
@@ -139,6 +138,7 @@
                             <img src="images/img_single_project.png" alt="" />
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="img-block">
                             <img src="images/clock.png" alt="" />
@@ -228,6 +228,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="box">
                             <div class="search-container">
@@ -237,6 +238,7 @@
                                 </a>
                             </div>
                         </div>
+
                         <div class="recent-post">
                             <div class="recent-header">
                                 <h5>Recent Posts</h5>
@@ -385,11 +387,13 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="button">
                     <p>Load More</p>
                 </div>
             </section>
         </main>
+
         <footer class="foot">
             <div class="logo">
                 <img src="images/logo.png" alt="" />
