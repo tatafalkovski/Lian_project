@@ -21,6 +21,9 @@
         min-height: 200px;
     }
 }
+img {
+    width: 100%;
+}
 
 .main-body-container {
     display: flex;
@@ -42,10 +45,10 @@
                 color: #ffffff;
                 text-transform: uppercase;
                 display: inline-block;
-            }
 
-            .black-selected p {
-                margin: auto;
+                // p {
+                //     margin: auto;
+                // }
             }
 
             .semi-bold {
@@ -122,34 +125,40 @@
 }
 
 .recent-post {
-    margin-bottom: 33px;
+    // margin-bottom: 33px;
 
-    .recent-header {
-        background-color: #ebebeb;
-        height: 40px;
-        position: relative;
-
-        h5 {
-            margin: auto 0;
-        }
-
-        .triangle-down {
-            width: 0;
-            height: 0;
-            border-left: 8px solid transparent;
-            border-right: 8px solid transparent;
-            border-top: 10px solid #ebebeb;
-            margin: 0 auto;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 40px;
-        }
+    .triangle-down {
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 10px solid #ebebeb;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 40px;
     }
 
     .recent {
         background-color: #fff;
         padding: 25px 25px 1px 25px;
+    }
+}
+
+.recent-header {
+    background-color: #ebebeb;
+    height: 40px;
+    position: relative;
+
+    h5 {
+        font-size: 18pt;
+        text-transform: uppercase;
+        color: #000000;
+        letter-spacing: 7.2px;
+        text-align: center;
+        line-height: 50px;
+        font-weight: 300;
     }
 }
 
@@ -170,17 +179,11 @@
             color: #3d3d3d;
             font-weight: 500;
             margin-top: 0;
-        }
-
-        p {
-            display: flex;
-            margin-top: 45px;
 
             .date {
                 font-size: 13px;
                 color: #9a9a9a;
                 font-weight: 400;
-
                 margin: 0;
             }
         }
