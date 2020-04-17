@@ -30,9 +30,21 @@ img {
     margin-left: -15px;
     margin-right: -15px;
 
+    @media screen and (max-width: 768px) {
+        display: inline;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .column {
         width: 33.3%;
         margin: 75px 15px;
+        position: relative;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            margin: 0;
+        }
 
         .text-block {
             padding: 45px;
@@ -46,9 +58,9 @@ img {
                 text-transform: uppercase;
                 display: inline-block;
 
-                // p {
-                //     margin: auto;
-                // }
+                p {
+                    margin: 0;
+                }
             }
 
             .semi-bold {
@@ -85,10 +97,12 @@ img {
 
             .join-icon {
                 display: flex;
+                right: 10px;
+                top: 313px;
+                position: absolute;
 
                 .svg-icon img {
                     width: 65px;
-                    height: 65px;
                 }
             }
         }
@@ -151,7 +165,7 @@ img {
     height: 40px;
     position: relative;
 
-    h5 {
+    p {
         font-size: 18pt;
         text-transform: uppercase;
         color: #000000;
@@ -159,6 +173,14 @@ img {
         text-align: center;
         line-height: 50px;
         font-weight: 300;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 10pt;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 13pt;
+        }
     }
 }
 
@@ -179,15 +201,14 @@ img {
             color: #3d3d3d;
             font-weight: 500;
             margin-top: 0;
-
-            .date {
-                font-size: 13px;
-                color: #9a9a9a;
-                font-weight: 400;
-                margin: 0;
-            }
         }
     }
+}
+
+.date {
+    font-size: 13px;
+    color: #9a9a9a;
+    font-weight: 300;
 }
 
 .popular-tags {
