@@ -2,6 +2,7 @@ const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const config = {
     entry: "./src/index.js",
@@ -34,8 +35,9 @@ const config = {
         extensions: [".js"]
     },
     plugins: [
-        new ExtractTextPlugin("styles.css")
-        // new CopyWebpackPlugin([{ from: "src/assets/", to: "assets" }])
+        new ExtractTextPlugin("styles.css"),
+        new CopyWebpackPlugin([{ from: "images", to: "images" }]),
+        new CleanWebpackPlugin(),
     ]
 };
 
