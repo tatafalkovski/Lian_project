@@ -8,35 +8,32 @@
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="style-about.css" />
+        <link rel="stylesheet" href="dist/styles.css" />
     </head>
     <body>
-        <header class="container">
+        <header class="container main-header">
             <div class="logo">
-                <a href="file:///Users/tata/projects/Lian_project/index.html">
-                    <img src="images/logo.png" alt=""
-                /></a>
+                <a href="/Lian_project/"> <img src="images/logo.png" alt="" /></a>
             </div>
             <div class="burger" tabindex="-1">
                 <div class="burger-line"></div>
             </div>
-            <nav>
-                <ul>
+            <nav class="menu-header">
+                <ul class="menu-head">
                     <li>
-                        <a
-                            href="file:///Users/tata/projects/Lian_project/index.html"
-                            >Home</a
-                        >
+                        <a href="/Lian_project/" class="active-page">— Home</a>
                     </li>
                     <li>
-                        <a href="#" class="active-page">- About</a>
+                        <a href="#">About</a>
                     </li>
                     <li>
                         <a href="#">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
+                        <a href="/Lian_project/blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/Lian_project/blog-post.html" class="active-page">Blog post</a>
                     </li>
                     <li>
                         <a href="#">Contact</a>
@@ -49,146 +46,158 @@
                 </ul>
             </nav>
         </header>
-        <header class="top-area container-lg">
-            <div class="main-area-about-us">
-                <div class="top-area">
-                    <h5>
-                        <span>About The Agency</span>
-                        <br />Welcome to Lian
-                    </h5>
-                </div>
-            </div>
-        </header>
-        <main class="container">
-            <div class="about-us">
-                <div class="imaga">
-                    <img src="images/imaga.png" alt="" />
-                </div>
 
-                <div class="our-story">
-                    <h5>OUR STORY</h5>
+        <main class="container--lg">
+            <section class="top-area container">
+                <div class="main-area-about-us">
+                    <div class="top-black-area">
+                        <h2>About the agency</h2>
+                    </div>
+                    <div class="top-letter-spase-area">
+                        <p>Welcome to Lian</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container">
+                <div class="about-us">
+                    <div class="imaga">
+                        <img src="images/imaga.png" alt="" />
+                    </div>
+    
+                    <div class="our-story">
+                        <h5>OUR STORY</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                            dolore magna aliquam erat volutpat. Ut wisi enim ad
+                            minim veniam, quis nostrud exerci tation ullamcorper
+                            suscipit.
+                                
+                        </p>
+                        <p>
+                            Nam liber tempor cum soluta nobis eleifend
+                            option congue nihil imperdiet doming idquod mazim
+                            placerat facer possim assum. Typi non habent claritatem
+                            insitam; est usus legentis in iis qui facit eorum
+                            claritatem.
+                        </p>
+
+                        <div class="range-slider">
+                            <h5>Our SKills</h5>
+                            <p class="skill">Photoshop</p>
+                            <div class="range photoshop">
+                                <div class="range-light-grey">
+                                    <div class="range-dark-grey"></div>
+                                    <div class="black-dot">
+                                        <div class="tool-tip">
+                                            <div class="black-tip">
+                                                90%
+                                            </div>
+                                            <div class="brill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <p class="skill">Branding</p>
+                            <div class="range branding">
+                                <div class="range-light-grey">
+                                    <div class="range-dark-grey"></div>
+                                    <div class="black-dot">
+                                        <div class="tool-tip">
+                                            <div class="black-tip">
+                                                95%
+                                            </div>
+                                            <div class="brill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <p class="skill">Photography</p>
+                            <div class="range photography">
+                                <div class="range-light-grey">
+                                    <div class="range-dark-grey"></div>
+                                    <div class="black-dot">
+                                        <div class="tool-tip">
+                                            <div class="black-tip">
+                                                50%
+                                            </div>
+                                            <div class="brill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="skill">Web Design</p>
+                            <div class="range design">
+                                <div class="range-light-grey">
+                                    <div class="range-dark-grey"></div>
+                                    <div class="black-dot">
+                                        <div class="tool-tip">
+                                            <div class="black-tip">
+                                                85%
+                                            </div>
+                                            <div class="brill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="awesome-team">
+                    <h4>Awesome Team</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                        dolore magna aliquam erat volutpat. Ut wisi enim ad
-                        minim veniam, quis nostrud exerci tation ullamcorper
-                        suscipit. Nam liber tempor cum soluta nobis eleifend
-                        option congue nihil imperdiet doming idquod mazim
-                        placerat facer possim assum. Typi non habent claritatem
-                        insitam; est usus legentis in iis qui facit eorum
-                        claritatem.
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod <br />
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                        wisi enim ad minim veniam, quis <br />nostrud exerci tation
+                        ullamcorper suscipit.
                     </p>
-                    <h5>Our SKills</h5>
-
-                    <p class="skill">Photoshop</p>
-                    <div class="range photoshop">
-                        <div class="range-light-grey">
-                            <div class="range-dark-grey"></div>
-                            <div class="black-dot">
-                                <div class="tool-tip">
-                                    <div class="black-tip">
-                                        <p>95%</p>
-                                    </div>
-                                    <div class="brill"></div>
-                                </div>
-                            </div>
+                </div>
+                <div class="team">
+                    <div class="employee">
+                        <img src="images/joy.png" alt="" />
+                        <div class="text-about">
+                            <h5>lian Joy</h5>
+                            <p><b>CEO/Founder</b></p>
+                            <p>
+                                Lian Joy CEO/Founder Lorem ipsum dolor sit amet,
+                                conse ctetuer adipi scing elit, sed diam nonu mmy
+                                nibh euismod tinci
+                            </p>
                         </div>
                     </div>
-
-                    <p class="skill">Branding</p>
-                    <div class="range branding">
-                        <div class="range-light-grey">
-                            <div class="range-dark-grey"></div>
-                            <div class="black-dot">
-                                <div class="tool-tip">
-                                    <div class="black-tip">
-                                        <p>95%</p>
-                                    </div>
-                                    <div class="brill"></div>
-                                </div>
-                            </div>
+                    <div class="employee albert">
+                        <img src="images/albert.png" alt="" />
+                        <div class="text-about">
+                            <h5>Albert Thanh</h5>
+                            <p><b>CEO/Founder</b></p>
+                            <p>
+                                Lian Joy CEO/Founder Lorem ipsum dolor sit amet,
+                                conse ctetuer adipi scing elit, sed diam nonu mmy
+                                nibh euismod tinci
+                            </p>
                         </div>
                     </div>
-
-                    <p class="skill">Photography</p>
-                    <div class="range photography">
-                        <div class="range-light-grey">
-                            <div class="range-dark-grey"></div>
-                            <div class="black-dot">
-                                <div class="tool-tip">
-                                    <div class="black-tip">
-                                        <p>95%</p>
-                                    </div>
-                                    <div class="brill"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="skill">Web Design</p>
-                    <div class="range design">
-                        <div class="range-light-grey">
-                            <div class="range-dark-grey"></div>
-                            <div class="black-dot">
-                                <div class="tool-tip">
-                                    <div class="black-tip">
-                                        <p>95%</p>
-                                    </div>
-                                    <div class="brill"></div>
-                                </div>
-                            </div>
+                    <div class="employee">
+                        <img src="images/jenn.png" alt="" />
+                        <div class="text-about">
+                            <h5>Jenn Periera</h5>
+                            <p><b>CEO/Founder</b></p>
+                            <p>
+                                Lian Joy CEO/Founder Lorem ipsum dolor sit amet,
+                                conse ctetuer adipi scing elit, sed diam nonu mmy
+                                nibh euismod tinci
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="awesome-team">
-                <h4>Awesome Team</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod <br />
-                    tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-                    wisi enim ad minim veniam, quis <br />nostrud exerci tation
-                    ullamcorper suscipit.
-                </p>
-            </div>
-            <div class="team">
-                <div class="employee">
-                    <img src="images/joy.png" alt="" />
-                    <div class="text-about">
-                        <h5>lian Joy</h5>
-                        <p><b>CEO/Founder</b></p>
-                        <p>
-                            Lian Joy CEO/Founder Lorem ipsum dolor sit amet,
-                            conse ctetuer adipi scing elit, sed diam nonu mmy
-                            nibh euismod tinci
-                        </p>
-                    </div>
-                </div>
-                <div class="employee albert">
-                    <img src="images/albert.png" alt="" />
-                    <div class="text-about">
-                        <h5>Albert Thanh</h5>
-                        <p><b>CEO/Founder</b></p>
-                        <p>
-                            Lian Joy CEO/Founder Lorem ipsum dolor sit amet,
-                            conse ctetuer adipi scing elit, sed diam nonu mmy
-                            nibh euismod tinci
-                        </p>
-                    </div>
-                </div>
-                <div class="employee">
-                    <img src="images/jenn.png" alt="" />
-                    <div class="text-about">
-                        <h5>Jenn Periera</h5>
-                        <p><b>CEO/Founder</b></p>
-                        <p>
-                            Lian Joy CEO/Founder Lorem ipsum dolor sit amet,
-                            conse ctetuer adipi scing elit, sed diam nonu mmy
-                            nibh euismod tinci
-                        </p>
-                    </div>
-                </div>
-            </div>
+            </section> 
         </main>
+
         <footer class="foot">
             <div class="logo">
                 <img src="images/logo.png" alt="" />

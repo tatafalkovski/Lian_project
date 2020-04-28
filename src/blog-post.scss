@@ -1,0 +1,22 @@
+.heding {
+    h3 {
+        text-transform: uppercase;
+        font-weight: 300;
+        color: #333333;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 10px;
+
+    }
+}
+
+.autor {
+    display: flex;
+    justify-content: space-evenly;
+
+    .by-jenn {
+        color: #777777;
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
