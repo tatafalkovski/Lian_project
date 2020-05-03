@@ -8,20 +8,37 @@ body {
     // background-color: rebeccapurple;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .container {
     margin: 0 auto;
     padding: 15px;
     max-width: 1230px;
     position: relative;
     // overflow: hidden;
-}
 
-.container-menu {
-    margin-top: 15px;
-}
+    &-menu {
+        margin-top: 15px;
+    }
 
-.container-lg {
-    width: 100%;
+    &-lg {
+        width: 100%;
+    }
+
+    &--area {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    &navigation {
+        background-color: #ffffff;
+        width: 100%;
+    }
 }
 
 ul,

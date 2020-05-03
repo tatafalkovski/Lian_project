@@ -1,3 +1,59 @@
+.top-area {
+    height: 50vh;
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-about {
+        background: url(/images/logo-about-us.png) center no-repeat;
+        background-size: cover;
+    
+        .main-area-about-us {
+            position: absolute;
+    
+            @media screen and (max-width: 769px) {
+                position: static;
+                left: auto;
+            }
+        }
+    }
+
+    &-blog {
+        background: url(/images/blog-logo.png) center no-repeat;
+        background-size: cover;
+    
+        /* small desktop */
+        @media screen and (max-width: 1024px) {
+            height: 40vh;
+            min-height: 300px;
+        }
+    
+        @media screen and (max-width: 768px) {
+            height: 30vh;
+            min-height: 200px;
+        }
+    }
+
+    &-post {
+        background: url(/images/blog-logo.png) center no-repeat;
+        background-size: cover;
+    }
+
+    &-contact {
+        background: url(/images/logo-about-us.png) center no-repeat;
+        background-size: cover;
+    }
+
+    &-portfolio {
+        background: url(/images/base.png) center no-repeat;
+        background-size: cover;
+    }
+}
+
 .top-black-area {
     background: #000000;
     font-weight: 300;
@@ -35,5 +91,10 @@
     @media screen and (max-width: 1024px) {
     font-size: 12px;
     }
-
 }
+
+.box-shadow {
+    box-shadow: 1px 3px 3px #d9d9d9 inset; 
+    z-index: 22;
+    width: 100%;
+  }
