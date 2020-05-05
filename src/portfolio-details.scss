@@ -1,4 +1,190 @@
 .navigation {
     background-color: #ffffff;
     height: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    .buttons {
+        display: flex;
+
+        .bars {
+            height: 13px;
+            width: 13px;
+            margin: 2px 12px;
+        }
+        .next-prew {
+            border: 1px solid #dadada;
+            border-top: 0;
+            border-bottom: 0;
+            display: flex;
+            padding: 20px 30px;
+            p {
+                font-size: 16px;
+                font-weight: bold;
+                margin: 0;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.slide {
+    display: flex;
+    padding-bottom: 60px;
+    .text-part {
+        width: 50%;
+        padding: 20px;
+        padding-left: 0;
+        h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-top: 0;
+        }
+        h3 {
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-top: 45px;
+        }
+        h5 {
+            color: #555555;
+            font-size: 16px;
+        }
+        h6 {
+            color: #555555;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        .line {
+            height: 1px;
+            width: 100%;
+            background-color: #dadada;
+        }
+        .date-like {
+            display: flex;
+            .like-cont {
+                display: flex;
+                padding-left: 50px;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 30px;
+                }
+            }
+        }
+        p {
+            color: #777777;
+            font-size: 14px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        .share-line {
+            display: inline-block;
+
+            &:hover {
+            display: flex;
+
+                cursor: pointer;
+                .icon-row {
+                    display: flex;
+
+                }
+            }
+
+            .share {
+                display: flex;
+                background-color: #777777;
+                width: 120px;
+                height: 50px;
+                padding: 10px 20px;
+                border-radius: 3px;
+                margin-right: 25px;
+
+                
+
+                .share-icon {
+                    width: 20px;
+                    height: 20px;
+                    margin: 4px;
+                }
+                p {
+                    color: #ffffff;
+                    margin: 0;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+            }
+        }
+        
+        .icon-row {
+            justify-content: space-between;
+            background-color: #ebebeb;
+            height: 50px;
+            width: 290px;
+            padding: 15px;
+            border-radius: 3px;
+            position: relative;
+            display: none;
+            .triangle-left {
+                width: 0; 
+                height: 0;
+                border-top: 8px solid transparent;
+                border-bottom: 8px solid transparent;
+                border-right: 10px solid #ebebeb;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -10px;
+            }
+            .share-icon {
+                width: 20px;
+                height: 20px;
+
+            }
+        }
+    }
+    .image-part {
+        width: 50%;
+        padding: 20px;
+        padding-right: 0;
+        .main-image {
+            
+        }
+        .little-images {
+            display: flex;
+            justify-content: space-between;
+            .mini-image {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.related {
+    padding-top: 30px;
+    h2 {
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        text-align: center;
+    }
+    p {
+        color: #777777;
+        font-size: 16px;
+        text-align: center;
+        line-height: 2.3;
+        max-width: 600px;
+        margin: 0 auto;
+
+    };
+}
+
+.container-img {
+    display: flex;
+    margin: 30px -15px 50px -15px;
+    .img-related {
+        width: 33.3%;
+        margin: 15px;
+    }
 }
