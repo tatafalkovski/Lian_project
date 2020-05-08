@@ -4,6 +4,12 @@
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: 486px) {
+        display: block;
+        height: 120px;
+
+    }
+
     .buttons {
         display: flex;
 
@@ -18,6 +24,7 @@
             border-bottom: 0;
             display: flex;
             padding: 20px 30px;
+
             p {
                 font-size: 16px;
                 font-weight: bold;
@@ -31,10 +38,19 @@
 .slide {
     display: flex;
     padding-bottom: 60px;
+    @media screen and (max-width: 850px) {
+        display: block;
+        padding: 0;
+    }
     .text-part {
         width: 50%;
         padding: 20px;
         padding-left: 0;
+        @media screen and (max-width: 850px) {
+            width: 100%;
+            padding: 0;
+            padding-bottom: 25px;
+        }
         h2 {
             font-size: 30px;
             text-transform: uppercase;
@@ -45,6 +61,9 @@
             text-transform: uppercase;
             font-size: 16px;
             margin-top: 45px;
+            @media screen and (max-width: 850px) {
+                margin-top: 10px;
+            }
         }
         h5 {
             color: #555555;
@@ -54,6 +73,9 @@
             color: #555555;
             font-size: 14px;
             margin-left: 10px;
+            @media screen and (max-width: 850px) {
+                margin-bottom: 10px;
+            }
         }
         .line {
             height: 1px;
@@ -147,6 +169,10 @@
         width: 50%;
         padding: 20px;
         padding-right: 0;
+        @media screen and (max-width: 850px) {
+            width: 100%;
+            padding: 0;
+        }
         .main-image {
             
         }
@@ -155,6 +181,7 @@
             justify-content: space-between;
             .mini-image {
                 margin-top: 15px;
+                width: 24%;
             }
         }
     }
@@ -183,8 +210,14 @@
 .container-img {
     display: flex;
     margin: 30px -15px 50px -15px;
+    @media screen and (max-width: 850px) {
+        margin: 0 -15px;
+    }
     .img-related {
         width: 33.3%;
         margin: 15px;
+        @media screen and (max-width: 850px) {
+            margin: 3px;
+        }
     }
 }

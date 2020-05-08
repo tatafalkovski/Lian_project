@@ -27,6 +27,7 @@ img {
             padding: 45px;
             background-color: #fff;
             margin-bottom: 33px;
+            position: relative;
 
             .black-selected {
                 background-color: #000000;
@@ -64,24 +65,25 @@ img {
 
             .svg {
                 display: flex;
-            }
 
-            .svg img {
-                height: 30px;
-                width: 30px;
-                margin-top: 8px;
-            }
-
-            .join-icon {
-                display: flex;
-                right: 10px;
-                top: 313px;
-                position: absolute;
-
-                .svg-icon img {
-                    width: 65px;
+                img {
+                    height: 30px;
+                    width: 30px;
+                    margin-top: 8px;
                 }
-            }
+                .join-icon {
+                    display: flex;
+                    position: absolute;
+                    right: 45px;
+    
+                    .svg-icon {
+                        margin-left: 10px;
+                        img {
+                            width: 20px;
+                        }
+                    } 
+                }
+            } 
         }
     }
 }
@@ -204,7 +206,9 @@ img {
         align-items: center;
         margin-top: 5px;
     }
-
+    a {
+        transition: background-color 0.7s ease, color 0.7s ease;
+    }
     a:hover {
         background-color: #000000;
         color: #ffffff;
