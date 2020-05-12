@@ -1,82 +1,83 @@
 .logo a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .main-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.05px;
-    padding-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.05px;
+  padding-top: 15px;
 }
 
 .active-page {
-    color: #000000;
+  color: #000000;
 }
 
 .menu-header {
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+  &.active {
     @media screen and (max-width: 1024px) {
-        display: none;
+      display: block;
+    }
+  }
+  .menu-head {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
     }
 
-    .menu-head {
-        display: flex;
-        align-items: center;
-
-        @media screen and (max-width: 1024px) {
-            flex-direction: column;
-        }
-
-        .search {
-            width: 14px;
-            height: 14px;
-        }
-
-        li {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-
-            a {
-                display: block;
-                padding: 25px 25px 20px;
-                color: #777777;
-
-                img {
-                    width: 15px;
-                    height: 15px;
-                }
-            }
-        }
+    .search {
+      width: 14px;
+      height: 14px;
     }
+
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      a {
+        display: block;
+        padding: 25px 25px 20px;
+        color: #777777;
+
+        img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
 }
 
 .burger {
-    display: none;
-    width: 30px;
-    height: 24px;
-    position: absolute;
-    right: 15px;
-    top: 20px;
-    border-top: 3px solid gray;
-    border-bottom: 3px solid gray;
-    flex-direction: column;
-    justify-content: center;
+  display: none;
+  width: 30px;
+  height: 24px;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  border-top: 3px solid gray;
+  border-bottom: 3px solid gray;
+  flex-direction: column;
+  justify-content: center;
 
-    @media screen and (max-width: 1024px) {
-        display: flex;
-    }
+  @media screen and (max-width: 1024px) {
+    display: flex;
+  }
 
-    &-line {
-        height: 3px;
-        background-color: gray;
-    }
+  &-line {
+    height: 3px;
+    background-color: gray;
+  }
 
-    &:focus + .menu-header {
-        @media screen and (max-width: 1024px) {
-            display: block;
-        }
-    }
+  &.active {
+  }
 }
